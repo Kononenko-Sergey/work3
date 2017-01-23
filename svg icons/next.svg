@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="50" viewBox="0 0 52 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="next">
+    <path id="arrow" class="cls-1" d="M2044.4,343.282l17.75-16.228a2.175,2.175,0,0,0,0-3.273l-0.09-.054-17.66-16.188a2.72,2.72,0,0,0-3.59,0l-0.02.032a2.189,2.189,0,0,0-.78,1.654V341.6a2.246,2.246,0,0,0,.8,1.678v0.006A2.715,2.715,0,0,0,2044.4,343.282Z" transform="translate(-2025 -300)"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="50" viewBox="0 0 52 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="laers">
+    <path id="icon" class="cls-1" d="M379.008,303.014l-25,13.274,25,13.277,25-13.277Zm0,30.835-20.352-10.806-4.647,2.467,25,13.271,25-13.271-4.647-2.467Zm0,9.217-20.352-10.807-4.647,2.466,25,13.277,25-13.277-4.647-2.466Z" transform="translate(-353 -300)"/>
+  </g>
+</svg>
