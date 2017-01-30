@@ -16,6 +16,7 @@ a{
 a:hover, a:focus{
 	color: #bfab94;
 	cursor: pointer;
+	border-bottom: 2px solid #bfab94;
 }
 
 {
@@ -30,17 +31,27 @@ p{
 	color: #8c8c8c;
 	font-size: 16px;
 }
-h2{
-	color: #000;
-	text-align: center;
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+	color: #555555;
 }
+
 h1{
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 }
+
+h2{
+	text-align: center;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 22px;
+	text-align: center;
+	font-weight: 400;
+}
+
 h4{
 	color: #cab79f;
 	margin-bottom: 0px;
@@ -109,6 +120,9 @@ h4{
 }
 .middle-container {
 	margin: 0px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
 }
@@ -144,10 +158,6 @@ button.accordion{
 .menu a {
 	padding: 10px 15px;
 }
-.menu a.active {
-	border-bottom: 2px solid #bfab94;
-	color: #fff;
-}
 .menu li{
 	display: inline-block;
 }
@@ -161,7 +171,13 @@ button.accordion{
 .slider h2, h1{
 	color: #fff;
 }
-
+.relative {
+	position: relative;
+}
+.text-center {
+	text-align: center;
+	padding-bottom: 100px;
+}
 
 .row {
 	display: table;
@@ -226,54 +242,56 @@ button.accordion{
 }
 .gradient-bg {
 	width: 100%;
-	height: 100px;
-	background: #35261f;
-}
-.gradient-bg-left h3{
-	margin: 0px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-}
-.gradient-bg-left p{
-	margin: 0px;
-	padding: 0px;
-}
-.gradient-bg-left{
-	width: 27%;
-	float: left;
-    padding: 20px 0px 0px 40px;
-
-}
-.gradient-bg-right{
-	width: 20%;
-	float: right;
-	text-align: center;
-    padding-top: 30px;
-}
-.gradient-bg-big{
-	width: 100%;
-	height: 200px;
+	min-height: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 	background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 }
+.gradient-bg-left{
+	text-align: left;
+	padding-right: 150px;
+}
+.gradient-bg-left h3{
+	margin: 0px;
+	color: #fff;
+	box-sizing: border-box;
+	padding-right: 200px;
+	text-align: left; 
+}
+.gradient-bg-left p{
+	margin: 0px;
+}
+.gradient-bg-right{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 20px;
+	margin-top: -22px;
 
+}
 .button-menu{
 	text-align: center;
   margin: 50px;
 }
-.button-menu button{
-	margin-left: 10px;
-	background: #fff;
-	border: 1px solid #8c8c8c;
-}
-.button-menu a{
-	color: #8c8c8c;
-}
+
 .button-menu button:hover{
 	background: #998675;
-	color: #000; /*не работатет*/
+	color: #000; /*!!!!!!!!*/
 }
+.button-menu-inform{
+  padding: 10px 20px;
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  border-radius: 3px;
+}
+.button-menu-inform:hover{
+	border: 1px solid #998675;
+	color: #fff;
+	background: #998675;
+}
+
 
 .post {
 	position: relative;
@@ -296,17 +314,27 @@ button.accordion{
 }
 .post .icon-link {
 	margin-left: -40px;
+	font-size: 24px;
 }
 .post .icon-search {
 	margin-left: 10px;
+	font-size: 24px;
 }
 .post:hover .icon-link, .post:hover .icon-search {
 	display: inline-block;
 }
 
+.post:hover .post-image:after {
+  border-bottom: 10px solid #998675; /* Добавляем треугольник */
+}
+.post:hover img {
+	opacity: .7;
+}
+
 
 .post p{
 	font-size: 14px;
+	padding-left: 25px;
 }
 .post h4{
 	padding-left: 25px;
@@ -314,11 +342,18 @@ button.accordion{
 
 .post-image {
 	position: relative;
+	overflow: hidden;
+	max-height: 200px;
 }
+.post-image img {
+	width: 100%;
+}
+
 .post-image:after {
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
-    left: 20px; bottom: 5px; /* Положение треугольника */
+    left: 20px; 
+    bottom: 0px; /* Положение треугольника */
     border: 10px solid transparent; /* Прозрачные границы */
     border-bottom: 10px solid #fff; /* Добавляем треугольник */
    }
@@ -332,17 +367,33 @@ button.accordion{
 	background: url(../images/video-bg.jpg)no-repeat;
 	background-size: cover;
 	background-position: center;
+	color: #fff;
+	text-align: center;
 }
+.bg-office p, .bg-office h2, .bg-office h3, .bg-office h4 {
+	color: #fff;
+	text-align: center;
+}
+
 .video{
-	width: 60%;
 	padding-top: 300px;
-	margin: 0px auto;
 }
-.icon-video{
-  display: block;
-  text-align: center;
-  font-size: 50px;
+.video .icon-video {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	box-sizing: border-box;
+	padding-top: 15px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: rgba(0,0,0,.4);
+	font-size: 50px;
+	text-align: center;
 }
+
 .iPhone {
 	width: 40%;
 	text-align: right;
@@ -377,7 +428,7 @@ button.accordion{
 
 .divide-content{
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 30px;
 }
 .col-5 span{
 	font-size: 48px;

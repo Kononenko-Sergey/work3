@@ -1,9 +1,6 @@
 @media only screen and (max-width: 768px){
-	.page-bg-mountains{
-		background-size: 100%;
-    height: 396px;
-    background-size: cover;
-    background-position: center;
+  .page-bg-mountains{
+  height: 50vh;
 	}
 	.middle-container {
 	width: 100%;
@@ -59,19 +56,46 @@
   	padding-top: 50px;
   	padding-bottom: 50px;
   }
+  .slider{
+    width: 70%;
+  }
+  .button-menu {
+    text-align: center;
+    margin: 50px 0px;
+}
   .col-4{
 	width: 50%;
   padding: 10px 10px;
 	}
-	.gradient-bg {
-    height: 70px;
-  }
-  .gradient-bg-big{
-  	height: 100px;
-  }
+  .post-text {
+    padding: 0px 10px 10px 10px;
+}
   .bg-office {
-    background-size: 100%;
-    height: 270px;
+    height: 35vh;
+  }
+    .video {
+    padding-top: 60px;
+  }
+  .video .icon-video {
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    font-size: 36px;
+  }
+  .video h2, .video p{
+    margin: 0px;
+  }
+  .iPhone {
+    padding-top: 140px;
+  }
+  .iPhone-sidebar ul {
+    padding: 0 0 0 25px;
+}
+  .iPhone-sidebar li {
+    line-height: 2;
+  }
+  .col-5{
+    width: 33%;
   }
   .dark-bg .col-4{
   	width: 25%;
@@ -81,8 +105,10 @@
   	padding-bottom: 25px;
   }
 	.pd-top{
-    padding-top: 30px;
-    padding-bottom: 30px;
+   padding: 0px 10px;
+  }
+  footer{
+    height: 100%;
   }
   .images{
   width: 49%;
@@ -103,7 +129,7 @@
 @media only screen and (max-width: 480px) {
 	.page-bg-mountains {
     background-size: 100%;
-    height: 214px;
+    height: 100vh;
     background-size:cover;
     background-position: center;
   }
@@ -116,7 +142,7 @@
   button.accordion {
 		display: block;
 	  float: right;
-	  margin-top: 0px;
+	  margin-top: 15px;
     background: none;
     color: #fff;
     cursor: pointer;
@@ -150,6 +176,9 @@
 	.menu li a:hover{
     color: #bfab94;
 	}
+  .slider{
+    width: 100%;
+  }
 
   .divide-content{
   	padding-top: 30px;
@@ -162,12 +191,46 @@
 		width: 100%;
   	padding: 10px 10px;
 	} 
-	.bg-office {
-    height: 163px;
+  .button-menu-inform{
+    display: block;
+    margin-top: 10px;
   }
-  .dark-bg .col-4{
-  	width: 50%;
-  	padding: 20px;
+  .col-6{
+    width: 100%;
+  }
+  .video {
+    padding-top: 30px;
+  }
+  .video .icon-video {
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+    font-size: 15px;
+  }
+  .video h2, .video p{
+    margin: 0px;
+  }
+  .bg-office {
+    height: 180px;
+  }
+  .iPhone {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    float: none;
+    padding-top: 90px;
+  }
+  .iPhone-sidebar {
+    padding: 0px;
+    width: 100%;
+  }
+  .iPhone-sidebar ul {
+    padding: 0px 30px;
+  }
+  .col-5 {
+    width: 100%;
+    padding: 20px;
+    min-height: 30px;
   }
   .dark-bg .divide-content{
   	padding-top: 25px;
@@ -179,6 +242,16 @@
   .center{
   	text-align: center;
   }
-	footer {
-    height: 600px;
+  footer {
+    height: 100%;
+  }
+  footer .col-4{
+    padding: 0px;
+  }
+  .images {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+    padding-top: 10px;
+  }
 }
