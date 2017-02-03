@@ -34,12 +34,8 @@
   display: block;
   }
   .menu {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-  	margin: 0px;
+    width: 18%;
+    margin-top: 10px;
   }
   .menu li{
 	display: block;
@@ -108,7 +104,7 @@
    padding: 0px 10px;
   }
   footer{
-    height: 100%;
+    
   }
   .images{
   width: 49%;
@@ -162,6 +158,10 @@
     background-color: white;
     display: none;
 	}
+  .menu {
+    width: 31%;
+    margin-top: 10px;
+  }
   div.panel.show {
     display: block;
   }
@@ -178,6 +178,7 @@
 	}
   .slider{
     width: 100%;
+    padding-top: 190px;
   }
 
   .divide-content{
@@ -198,6 +199,21 @@
   .col-6{
     width: 100%;
   }
+  .gradient-bg-left {
+    width: 100%;
+    text-align: center;
+  }
+  .gradient-bg-left h3 {
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  .gradient-bg-right {
+    position: static;
+    display: block;
+    width: 36%;
+    text-align: center;
+    margin: 10px auto;
+  }
   .video {
     padding-top: 30px;
   }
@@ -211,7 +227,7 @@
     margin: 0px;
   }
   .bg-office {
-    height: 180px;
+    height: 35vh;
   }
   .iPhone {
     display: block;
@@ -243,7 +259,7 @@
   	text-align: center;
   }
   footer {
-    height: 100%;
+    
   }
   footer .col-4{
     padding: 0px;
